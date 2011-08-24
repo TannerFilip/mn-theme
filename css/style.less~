@@ -135,7 +135,7 @@ div.articles {
 	
 	a.title:hover {
 		background: #fff;
-		box-shadow: 0 0 2px 5px #d2cec4;
+		box-shadow: 0 0 7px #6e685e;
 		
 		h1 {
 			display: none;
