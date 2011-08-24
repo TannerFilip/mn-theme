@@ -71,16 +71,15 @@ aside.left {
 	clear: left;
 
 	div.date {
-		time.day {
+		span.day {
 			font-size: 42px;
-			line-height: 0.75;
 		}
 
-		time.month {
+		span.month {
 			font-size: 27px;
 		}
 
-		time.year {
+		span.year {
 			font-size: 21px;
 		}
 	}
@@ -136,6 +135,7 @@ div.articles {
 	
 	a.title:hover {
 		background: #fff;
+		box-shadow: 0 0 2px 5px #d2cec4;
 		
 		h1 {
 			display: none;
