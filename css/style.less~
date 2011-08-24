@@ -82,7 +82,7 @@ div.articles {
 		display: block;
 		height: 200px;
 		background: #f2efed;
-		box-shadow: inset 0px 0px 0px 1px #d2cec4;
+		box-shadow: inset 0 0 0 1px #d2cec4;
 		font-family: "Museo Sans";
 		font-size: 30px;
 		color: #6e685e;
@@ -95,4 +95,9 @@ div.articles {
 			text-align: center;
 		}
 	} 
+}
+
+aside.right {
+	float: right;
+	width: 138px;
 }
