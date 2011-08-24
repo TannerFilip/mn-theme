@@ -1,5 +1,7 @@
 body {
 	padding-top: 50px;
+	font-family: sans-serif;
+	font-size: 13px;
 }
 
 h1 {
@@ -10,7 +12,7 @@ header {
 	background: #163754;
 	height: 50px;
 	color: #fff;
-	text-shadow: 0px -1px 1px #000;
+	text-shadow: 0 -1px 0 #000;
 	-webkit-box-shadow: 0px 0px 15px #000;
 	box-shadow: 0px 0px 15px #000;
 	z-index: 2;
@@ -39,6 +41,8 @@ header {
 section {
 	background: #bfdee8;
 	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 15px #000;
+	box-shadow: 0px 0px 15px #000;
 
 	div.center {
 		width: 978px;
@@ -58,6 +62,7 @@ aside.left {
 	width: 54px;
 	float: left;
 	padding: 15px 15px 0 0;
+	clear: left;
 
 	div.date {
 		span.day {
@@ -78,7 +83,6 @@ div.articles {
 	width: 756px;
 	background: #fff;
 	overflow: hidden;
-	float: left;
 	
 	a.title {
 		display: block;
@@ -95,12 +99,34 @@ div.articles {
 		h1 {
 			margin: 5px;
 			text-align: center;
+			overflow: text-wrap;
 		}
 	} 
+}
+
+div.left {
+	float: left;
+	width: 825px;
 }
 
 aside.right {
 	float: left;
 	width: 138px;
-	padding-left: 15px;
+	padding: 15px 0 0 15px;
+}
+
+footer {
+	background: #163754;
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	color: #fff;
+	text-shadow: 0 -1px 0 #000;
+	-webkit-box-shadow: 0px 0px 15px #000;
+	box-shadow: 0px 0px 15px #000;
+	
+	div {
+		width: 978px;
+		margin: 0px auto;
+	}
 }
