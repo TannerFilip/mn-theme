@@ -11,7 +11,5 @@
 			<div class="center">
 				<a href="<?php echo get_option('home'); ?>">
 					<img alt="" src="<?php bloginfo('template_url'); ?>/img/logo.png">
-					<h1>moznews.org</h1>
+					<h1><?php bloginfo("name"); ?></h1>
 				</a>
-			</div>
-		</header>

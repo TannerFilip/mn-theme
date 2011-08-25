@@ -1,10 +1,11 @@
 <?php get_header(); ?>
+			</div>
+		</header>
 		<section>
 			<div class="center">
-				<aside class="right">
-					<img src="http://placekitten.com/g/136/400">
-				</aside>
+				<?php get_sidebar(); ?>
 					<aside class="left">
+							<div class="arrow"><?php previous_post_link('%link', '&#8592;'); ?><?php next_post_link('%link', '&#8594;'); ?></div>
 							<div class="day"><?php the_time('d') ?></div>
 							<div class="month"><?php the_time('M') ?></div>
 							<div class="year"><?php the_time('Y') ?></div>
