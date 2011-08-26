@@ -1,6 +1,6 @@
 		<footer>
 			<div class="center">
-			 <img src="http://placekitten.com/g/978/300">
+			 <?php dynamic_sidebar("Footer"); ?>
 			</div>
 		</footer>
 	</body>

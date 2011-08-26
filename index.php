@@ -3,21 +3,21 @@
 		</header>
 		<section>
 			<div class="center">
-			<?php get_sidebar(); ?>
+<?php get_sidebar(); ?>
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
-			<?php if( $current_date != get_the_date('d-m-Y') ) : ?>
-			<?php if( $current_date != NULL ) : ?>
+			<?php if($current_date != get_the_date("d-m-Y")) : ?>
+			<?php if($current_date != NULL) : ?>
 			</div>
 			<?php endif; ?>
-			<?php $current_date = get_the_date('d-m-Y'); ?>
+			<?php $current_date = get_the_date("d-m-Y"); ?>
 					<aside class="left">
-						<?php if( $previous_post_link_set != true ) : ?>
-						<div class="arrow"><?previous_posts_link('&#8593;'); $previous_post_link_set = true; ?></div>
+						<?php if($previous_post_link_set != true) : ?>
+						<div class="arrow"><?previous_posts_link("&#8593;"); $previous_post_link_set = true; ?></div>
 						<?php endif ?>
-						<div class="day"><?php the_time('d') ?></div>
-						<div class="month"><?php the_time('M') ?></div>
-						<div class="year"><?php the_time('Y') ?></div>
+						<div class="day"><?php the_time("d") ?></div>
+						<div class="month"><?php the_time("M") ?></div>
+						<div class="year"><?php the_time("Y") ?></div>
 					</aside>
 					<div class="content">
 			<?php endif; ?>
@@ -31,7 +31,7 @@
 			<?php endif; ?>
 				</div>
 				<aside class="arrow-down">
-					<div class="arrow"><?php next_posts_link('&#8595;'); ?></div>
+					<div class="arrow"><?php next_posts_link("&#8595;"); ?></div>
 				</aside>
 			</div>
 		</section>

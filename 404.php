@@ -10,7 +10,7 @@
 					<div class="content">
 						<article class="all">
 							<article class="article">
-							<p>Uh-oh, you're looking for something that isn't here. <a href="<?php echo get_option('home'); ?>">Return to the homepage.</a></p>
+							<p>Uh-oh, you"re looking for something that isn"t here. <a href="<?php echo get_option("home"); ?>">Return to the homepage.</a></p>
 							</article>
 						</article>
 					</div>
