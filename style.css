@@ -2,7 +2,7 @@
 Theme Name: moznews
 Theme URI: http://moznews.org/
 Description: A theme by Leo McArdle for moznews.org.
-Version: 1.0.12
+Version: 1.0.13
 Author: Leo McArdle
 Author URI: http://wiki.mozilla.org/User:Leo_McArdle
 */
@@ -263,6 +263,6 @@ footer h7,
 footer h8 {
   color: inherit;
 }
-footer footer a {
+footer a {
   color: #bfdee8;
 }
