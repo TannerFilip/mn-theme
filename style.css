@@ -2,7 +2,7 @@
 Theme Name: moznews
 Theme URI: http://moznews.org/
 Description: A theme by Leo McArdle for moznews.org.
-Version: 1.0.2
+Version: 1.0.3
 Author: Leo McArdle
 Author URI: http://wiki.mozilla.org/User:Leo_McArdle
 */
@@ -64,6 +64,8 @@ ol, ul {
 }
 blockquote {
   background: #f2efed;
+  -moz-box-shadow: inset 0 0 0 1px #d2cec4;
+  -webkit-box-shadow: inset 0 0 0 1px #d2cec4;
   box-shadow: inset 0 0 0 1px #d2cec4;
   padding: 10px;
   margin: 0 0 10px 0;
@@ -88,8 +90,9 @@ header {
   height: 50px;
   color: #fff;
   text-shadow: 0 -1px 0 #000000;
-  -webkit-box-shadow: 0px 0px 10px 1px #000;
-  box-shadow: 0px 0px 10px 1px #000;
+  -moz-box-shadow: 0 0 0 10 1px #000000;
+  -webkit-box-shadow: 0 0 0 10 1px #000000;
+  box-shadow: 0 0 0 10 1px #000000;
   z-index: 2;
   position: relative;
   width: 100%;
@@ -108,8 +111,9 @@ header h1 {
 section {
   background: #bfdee8;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 10px 1px #000;
-  box-shadow: 0 0 10px 1px #000;
+  -moz-box-shadow: 0 0 0 10px 1px #000000;
+  -webkit-box-shadow: 0 0 0 10px 1px #000000;
+  box-shadow: 0 0 0 10px 1px #000000;
 }
 aside {
   background: #bfdee8;
@@ -169,6 +173,8 @@ a.titlebox {
   display: block;
   height: 200px;
   background: #f2efed;
+  -moz-box-shadow: inset 0 0 0 1px #d2cec4;
+  -webkit-box-shadow: inset 0 0 0 1px #d2cec4;
   box-shadow: inset 0 0 0 1px #d2cec4;
   margin: 15px;
   float: left;
@@ -204,7 +210,9 @@ a.titlebox span {
 }
 a.titlebox:hover, a.titlebox:focus {
   background: #fff;
-  box-shadow: 0 0 5px 1px #6e685e;
+  -moz-box-shadow: 0 0 0 5px 1px #6e685e;
+  -webkit-box-shadow: 0 0 0 5px 1px #6e685e;
+  box-shadow: 0 0 0 5px 1px #6e685e;
 }
 a.titlebox:hover h1, a.titlebox:focus h1 {
   display: none;
