@@ -13,6 +13,7 @@
 	<body>
 		<header>
 			<div class="center">
+				<nav><?php dynamic_sidebar("Navigation"); ?></nav>
 				<a href="<?php echo get_option("home"); ?>">
 					<img alt="" src="<?php bloginfo("template_url"); ?>/img/logo.png">
 					<h1><?php bloginfo("name"); ?></h1>
