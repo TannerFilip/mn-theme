@@ -9,10 +9,6 @@
 							<div class="day"><?php the_time("d") ?></div>
 							<div class="month"><?php the_time("M") ?></div>
 							<div class="year"><?php the_time("Y") ?></div>
-						<a href="#comments">
-							<img src="<?php bloginfo("template_url"); ?>/img/comments.png" alt="Number of comments:">
-							<span class="number-comments"><?php comments_number("0", "1", "%"); ?></span>
-						</a>
 					</aside>
 					<div class="content">
 					<?php if (have_posts()) : ?>
