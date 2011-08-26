@@ -2,7 +2,7 @@
 Theme Name: moznews
 Theme URI: http://moznews.org/
 Description: A theme by Leo McArdle for moznews.org.
-Version: 1.0.1
+Version: 1.0.2
 Author: Leo McArdle
 Author URI: http://wiki.mozilla.org/User:Leo_McArdle
 */
@@ -33,7 +33,7 @@ h5,
 h6,
 h7,
 h8 {
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", "MuseoSans500", Arial, sans-serif;
   font-weight: normal;
   margin: 0 0 10px 0;
   color: #6e685e;
@@ -115,7 +115,7 @@ aside {
   background: #bfdee8;
   color: #163754;
   text-shadow: 0px 1px 1px #fff;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", "MuseoSans500", Arial, sans-serif;
 }
 div.a-days-content {
   clear: left;
