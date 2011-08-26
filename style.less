@@ -2,17 +2,23 @@
 Theme Name: moznews
 Theme URI: http://moznews.org/
 Description: A theme by Leo McArdle for moznews.org.
-Version: 1.0.3
+Version: 1.0.4
 Author: Leo McArdle
 Author URI: http://wiki.mozilla.org/User:Leo_McArdle
 */
 
 @museosans: "Museo Sans", "MuseoSans500", Arial, sans-serif;
 
-.box-shadow (@2: 0, @3: 0, @4: 0, @5: 0, @6: 0, @1: 0) {
-	-moz-box-shadow: @1 @2 @3 @4 @5 @6;
-	-webkit-box-shadow: @1 @2 @3 @4 @5 @6;
-	box-shadow: @1 @2 @3 @4 @5 @6;
+.box-shadow (@1: 0, @2: 0, @3: 0, @4: 0, @5: 0,) {
+	-moz-box-shadow: @1 @2 @3 @4 @5;
+	-webkit-box-shadow: @1 @2 @3 @4 @5;
+	box-shadow: @1 @2 @3 @4 @5;
+}
+
+.box-shadow-inset (@1: 0, @2: 0, @3: 0, @4: 0, @5: 0,) {
+	-moz-box-shadow: inset @1 @2 @3 @4 @5;
+	-webkit-box-shadow: inset @1 @2 @3 @4 @5;
+	box-shadow: inset @1 @2 @3 @4 @5;
 }
 
 .centered {
@@ -73,7 +79,7 @@ ol, ul {
 
 blockquote {
 	background: #f2efed;
-	.box-shadow(0, 0, 0, 1px, #d2cec4, inset);
+	.box-shadow-inset(0, 0, 0, 1px, #d2cec4);
 	padding: 10px;
 	margin: 0 0 10px 0;
 	p {
@@ -190,7 +196,7 @@ a.titlebox {
 	display: block;
 	height: 200px;
 	background: #f2efed;
-	.box-shadow(0, 0, 0, 1px, #d2cec4, inset);
+	.box-shadow-inset(0, 0, 0, 1px, #d2cec4);
 	margin: 15px;
 	float: left;
 	width: 222px;
