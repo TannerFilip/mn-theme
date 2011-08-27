@@ -2,7 +2,7 @@
 Theme Name: moznews
 Theme URI: http://moznews.org/
 Description: A theme by Leo McArdle for moznews.org.
-Version: 1.0.14
+Version: 1.0.15
 Author: Leo McArdle
 Author URI: http://wiki.mozilla.org/User:Leo_McArdle
 */
@@ -121,6 +121,12 @@ header nav div {
   font-size: inherit;
   display: inline;
   color: inherit;
+}
+header nav li:before {
+  content: " • ";
+}
+header nav li:nth-of-type(1):before {
+  content: "";
 }
 header nav img {
   margin: -6px 5px;
