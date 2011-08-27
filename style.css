@@ -2,7 +2,7 @@
 Theme Name: moznews
 Theme URI: http://moznews.org/
 Description: A theme by Leo McArdle for moznews.org.
-Version: 1.0.13
+Version: 1.0.14
 Author: Leo McArdle
 Author URI: http://wiki.mozilla.org/User:Leo_McArdle
 */
@@ -93,7 +93,7 @@ header {
   -moz-box-shadow: 0 0 10px 1px #000000;
   -webkit-box-shadow: 0 0 10px 1px #000000;
   box-shadow: 0 0 10px 1px #000000;
-  z-index: 2;
+  z-index: 3;
   position: relative;
   width: 100%;
   font-size: 24px;
@@ -131,15 +131,14 @@ section {
   -moz-box-shadow: 0 0 10px 1px #000000;
   -webkit-box-shadow: 0 0 10px 1px #000000;
   box-shadow: 0 0 10px 1px #000000;
+  position: relative;
+  z-index: 2;
 }
 aside {
   background: #bfdee8;
   color: #163754;
   text-shadow: 0px 1px 1px #fff;
   font-family: "Museo Sans", "MuseoSans500", Arial, sans-serif;
-}
-div.a-days-content {
-  clear: left;
 }
 aside.left {
   text-align: center;
@@ -174,6 +173,8 @@ div.content {
   background: #ffffff url("img/content_shadow.png");
   overflow: hidden;
   float: left;
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
 }
 a.titlebox {
   display: block;
@@ -247,8 +248,6 @@ aside.right h8 {
 footer {
   background: #163754;
   width: 100%;
-  position: relative;
-  z-index: -1;
   color: #fff;
   text-shadow: 0 -1px 0 #000000;
   padding: 15px 0;
@@ -263,6 +262,10 @@ footer h7,
 footer h8 {
   color: inherit;
 }
-footer a {
+footer a,
+footer a:hover,
+footer a:active,
+footer a:visited,
+footer a:focus {
   color: #bfdee8;
 }
